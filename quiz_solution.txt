@@ -1,0 +1,29 @@
+7.Write a program to create "intro.txt" file.Print only even number of rows
+
+a=['Hi...','My name is Vruti','I am BCA student','I belongs to Junagadh but currentely living in surat','I like Travelling','I want to become....','I am studying in VTCBCSR.']
+
+import csv
+
+with open('intro.txt','w',newline='')as f:
+    for i in a:
+        w=f.write(i) 
+        b=f.write('\n')
+
+with open('intro.txt','r',newline='')as f:
+        reader=f.readlines()#[0::2]
+        for i in reader:
+            print(i)
+
+Hi...
+
+My name is Vruti
+
+I am BCA student
+
+I belongs to Junagadh but currentely living in surat
+
+I like Travelling
+
+I want to become....
+
+I am studying in VTCBCSR.
