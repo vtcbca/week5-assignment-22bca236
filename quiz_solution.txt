@@ -10,10 +10,11 @@ with open('intro.txt','w',newline='')as f:
         b=f.write('\n')
 
 with open('intro.txt','r',newline='')as f:
-        reader=f.readlines()#[0::2]
+        reader=f.readlines()
         for i in reader:
             print(i)
 
+#output
 Hi...
 
 My name is Vruti
@@ -27,3 +28,16 @@ I like Travelling
 I want to become....
 
 I am studying in VTCBCSR.
+
+with open('intro.txt','r',newline='')as f:
+        reader=f.readlines()[1::2]
+        for i in reader:
+            print(i)
+
+#output
+My name is Vruti
+
+I belongs to Junagadh but currentely living in surat
+
+I want to become....
+
